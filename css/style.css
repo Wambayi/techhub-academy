@@ -1,9 +1,35 @@
+
+
 body{
     font-family: Arial, sans-serif;
+    background:#f8f9fa;
+    margin:0;
+    padding:0;
+    transition:background .3s,color .3s;
 }
 
-.card{
+.container{
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+h1,h2{
     margin-bottom:20px;
+}
+
+img{
+    max-width:100%;
+    height:auto;
+}
+
+.btn{
+    margin-top:10px;
+    transition:.3s;
+}
+
+.navbar-brand{
+    font-weight:bold;
+    font-size:1.3rem;
 }
 
 footer{
@@ -11,83 +37,23 @@ footer{
     color:white;
     text-align:center;
     padding:20px;
+    font-size:.9rem;
 }
 
-h1,h2{
-    margin-bottom:20px;
-}
-.card {
-    margin-bottom: 20px;
-}
 
-.container {
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-h1 {
-    margin-bottom: 20px;
-}
-
-.btn {
-    margin-top: 10px;
-}
-img {
-    max-width: 100%;
-    height: auto;
-}
-.navbar-brand {
-    font-weight: bold;
-    font-size: 1.3rem;
-}
-
-.card {
-    transition: transform 0.3s ease;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-}
-
-.btn {
-    transition: 0.3s ease;
-}
-
-footer {
-    font-size: 0.9rem;
-}
-
-body {
-    background-color: #f8f9fa;
-}
-.dark-mode {
-    background-color: #212529;
-    color: white;
-}
-
-.dark-mode .card {
-    background-color: #343a40;
-    color: white;
-}
-
-.dark-mode footer {
-    background-color: black;
-}
 
 .hero{
 
-    background-image:
+    background:
     linear-gradient(rgba(4,18,40,.72),rgba(4,18,40,.72)),
     url("../images/hero.jpg");
 
     background-size:cover;
-
     background-position:center;
 
     min-height:600px;
 
     display:flex;
-
     align-items:center;
 
     color:white;
@@ -97,7 +63,6 @@ body {
 .hero-overlay{
 
     width:100%;
-
     padding:100px 0;
 
 }
@@ -105,9 +70,7 @@ body {
 .hero-small{
 
     color:#2d8cff;
-
     font-weight:700;
-
     letter-spacing:2px;
 
 }
@@ -115,10 +78,7 @@ body {
 .hero h1{
 
     font-size:3.8rem;
-
     font-weight:700;
-
-    margin:20px 0;
 
 }
 
@@ -131,9 +91,7 @@ body {
 .hero-text{
 
     font-size:1.2rem;
-
     line-height:1.8;
-
     margin-bottom:35px;
 
 }
@@ -141,32 +99,27 @@ body {
 .hero .btn{
 
     padding:14px 30px;
-
     border-radius:10px;
 
 }
 
 
+
 .feature-card{
 
     background:white;
-
     padding:35px 25px;
-
     border-radius:15px;
-
     box-shadow:0 10px 30px rgba(0,0,0,.08);
-
     transition:.3s;
-
     height:100%;
+    text-align:center;
 
 }
 
 .feature-card:hover{
 
     transform:translateY(-10px);
-
     box-shadow:0 20px 40px rgba(0,0,0,.15);
 
 }
@@ -174,9 +127,7 @@ body {
 .feature-icon{
 
     font-size:3rem;
-
     color:#0d6efd;
-
     margin-bottom:20px;
 
 }
@@ -184,37 +135,33 @@ body {
 .feature-card h3{
 
     color:#0d6efd;
-
     font-weight:700;
 
 }
 
 .feature-card h5{
 
-    margin-top:10px;
-
-    margin-bottom:15px;
-
+    margin:10px 0;
     font-weight:600;
+    color:#212529;
+
+}
+
+.feature-card p{
+
+    color:#555;
 
 }
 
 
-
 .testimonial-card{
 
-    background:#ffffff;
-
+    background:white;
     padding:30px;
-
     border-radius:15px;
-
     text-align:center;
-
     box-shadow:0 10px 30px rgba(0,0,0,.08);
-
     transition:.3s;
-
     height:100%;
 
 }
@@ -223,57 +170,42 @@ body {
 
     transform:translateY(-8px);
 
-    box-shadow:0 20px 40px rgba(0,0,0,.15);
-
 }
 
 .testimonial-img{
 
     width:100px;
-
     height:100px;
-
     border-radius:50%;
-
     object-fit:cover;
-
     margin-bottom:20px;
-
     border:4px solid #0d6efd;
 
 }
 
 
+
 .course-card{
 
-    background:#fff;
-
+    background:white;
     border-radius:15px;
-
     overflow:hidden;
-
-    box-shadow:0 12px 30px rgba(0,0,0,.08);
-
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
     transition:.3s;
-
     height:100%;
 
 }
 
 .course-card:hover{
 
-    transform:translateY(-10px);
-
-    box-shadow:0 20px 40px rgba(0,0,0,.15);
+    transform:translateY(-8px);
 
 }
 
 .course-card img{
 
     width:100%;
-
-    height:260px;
-
+    height:250px;
     object-fit:cover;
 
 }
@@ -282,57 +214,23 @@ body {
 
     font-weight:700;
 
-    margin-bottom:15px;
-
 }
 
 .course-card p{
 
     color:#555;
 
-    margin-bottom:10px;
-
 }
 
-.card{
-
-    border:none;
-
-    border-radius:15px;
-
-}
-
-.card img{
-
-    height:260px;
-
-    object-fit:cover;
-
-}
-
-.card:hover{
-
-    transform:translateY(-6px);
-
-    transition:.3s;
-
-    box-shadow:0 20px 40px rgba(0,0,0,.15);
-
-}
 
 
 .gallery-card{
 
-    background:#fff;
-
+    background:white;
     border-radius:15px;
-
     overflow:hidden;
-
-    box-shadow:0 12px 30px rgba(0,0,0,.08);
-
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
     transition:.3s;
-
     height:100%;
 
 }
@@ -341,16 +239,12 @@ body {
 
     transform:translateY(-8px);
 
-    box-shadow:0 20px 40px rgba(0,0,0,.15);
-
 }
 
 .gallery-card img{
 
     width:100%;
-
     height:250px;
-
     object-fit:cover;
 
 }
@@ -358,29 +252,56 @@ body {
 .gallery-card h5{
 
     font-weight:700;
-
-    margin-bottom:10px;
+    color:#212529;
 
 }
 
 .gallery-card p{
 
-    color:#666;
+    color:#555;
 
 }
 
 
-.card h1{
 
-    color:#0d6efd;
+.card{
 
-    font-size:3rem;
+    border:none;
+    border-radius:15px;
+    margin-bottom:20px;
+    transition:.3s;
 
-    font-weight:700;
+}
+
+.card:hover{
+
+    transform:translateY(-6px);
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+
+}
+.card img{
+
+    width:100%;
+
+    height:300px;
+
+    object-fit:cover;
+
+    object-position:center;
+
+    display:block;
 
 }
 
 
+form{
+
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
 
 .accordion-button{
 
@@ -389,15 +310,87 @@ body {
 }
 
 
+body.dark-mode{
 
-form{
-
-    background:#fff;
-
-    padding:30px;
-
-    border-radius:15px;
-
-    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    background:#212529;
+    color:white;
 
 }
+
+body.dark-mode footer{
+
+    background:black;
+
+}
+
+body.dark-mode .feature-card,
+body.dark-mode .testimonial-card,
+body.dark-mode .course-card,
+body.dark-mode .gallery-card,
+body.dark-mode .card{
+
+    background:#343a40;
+    color:white;
+
+}
+
+body.dark-mode .feature-card h3{
+
+    color:#4ea3ff;
+
+}
+
+body.dark-mode .feature-card h5,
+body.dark-mode .feature-card p,
+body.dark-mode .testimonial-card h5,
+body.dark-mode .testimonial-card p,
+body.dark-mode .testimonial-card small,
+body.dark-mode .course-card h3,
+body.dark-mode .course-card p,
+body.dark-mode .gallery-card h5,
+body.dark-mode .gallery-card p,
+body.dark-mode .card p,
+body.dark-mode .card h1,
+body.dark-mode .card h2,
+body.dark-mode .card h3,
+body.dark-mode .card h4,
+body.dark-mode .card h5{
+
+    color:white !important;
+
+}
+
+body.dark-mode .text-muted{
+
+    color:#d0d0d0 !important;
+
+}
+
+body.dark-mode form{
+
+    background:#343a40;
+
+}
+
+body.dark-mode form label{
+
+    color:white;
+
+}
+
+body.dark-mode input,
+body.dark-mode textarea{
+
+    background:#495057;
+    color:white;
+    border:1px solid #6c757d;
+
+}
+
+body.dark-mode input::placeholder,
+body.dark-mode textarea::placeholder{
+
+    color:#ced4da;
+
+}
+```
